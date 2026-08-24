@@ -84,6 +84,11 @@
           <span>{{ t.about.workingLabel }}</span>
           <strong>{{ t.about.working }}</strong>
         </div>
+
+        <div>
+          <span>{{ t.about.languagesLabel }}</span>
+          <strong>{{ t.about.languages }}</strong>
+        </div>
       </div>
     </div>
   </section>
@@ -96,17 +101,23 @@
     </div>
 
     <div class="skills__grid">
-      <span>Angular</span>
-      <span>TypeScript</span>
       <span>JavaScript</span>
-      <span>HTML</span>
-      <span>SCSS / CSS</span>
+      <span>TypeScript</span>
+      <span>Angular</span>
       <span>Node.js</span>
       <span>PHP</span>
       <span>SQL</span>
+      <span>Python</span>
+      <span>Java</span>
+      <span>HTML / CSS</span>
       <span>REST APIs</span>
-      <span>Git</span>
-      <span>C# / .NET</span>
+      <span>JSON</span>
+      <span>Express.js</span>
+      <span>Git / GitLab</span>
+      <span>MySQL</span>
+      <span>SQL Server</span>
+      <span>JobRouter</span>
+      <span>DocuWare</span>
       <span>Scrum / Kanban</span>
     </div>
   </section>
@@ -183,6 +194,8 @@
 
           <div class="experience-item__tech">
             <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>Angular</span>
             <span>Node.js</span>
             <span>PHP</span>
             <span>SQL</span>
@@ -215,6 +228,80 @@
           </div>
         </div>
       </article>
+
+      <article class="experience-item">
+        <div class="experience-item__date">03.2022 — 08.2022</div>
+
+        <div class="experience-item__content">
+          <h3>{{ t.experience.digitization.title }}</h3>
+
+          <span class="experience-item__company">
+            {{ t.experience.digitization.company }}
+          </span>
+
+          <p>{{ t.experience.digitization.description }}</p>
+        </div>
+      </article>
+
+      <article class="experience-item">
+        <div class="experience-item__date">09.2010 — 02.2018</div>
+
+        <div class="experience-item__content">
+          <h3>{{ t.experience.technicianSilver.title }}</h3>
+
+          <span class="experience-item__company">
+            {{ t.experience.technicianSilver.company }}
+          </span>
+
+          <p>{{ t.experience.technicianSilver.description }}</p>
+
+          <div class="experience-item__tech">
+            <span>Hardware</span>
+            <span>Software</span>
+            <span>Networks</span>
+            <span>Troubleshooting</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="experience-item">
+        <div class="experience-item__date">05.2008 — 09.2010</div>
+
+        <div class="experience-item__content">
+          <h3>{{ t.experience.technicianNahib.title }}</h3>
+
+          <span class="experience-item__company">
+            {{ t.experience.technicianNahib.company }}
+          </span>
+
+          <p>{{ t.experience.technicianNahib.description }}</p>
+
+          <div class="experience-item__tech">
+            <span>Hardware</span>
+            <span>Software</span>
+            <span>Networks</span>
+            <span>Troubleshooting</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="education-card">
+      <div class="education-card__date">
+        {{ t.education.date }}
+      </div>
+
+      <div class="education-card__content">
+        <span class="education-card__label">
+          {{ t.education.label }}
+        </span>
+
+        <h3>{{ t.education.title }}</h3>
+
+        <strong>{{ t.education.school }}</strong>
+
+        <p>{{ t.education.description }}</p>
+      </div>
     </div>
   </section>
 

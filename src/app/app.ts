@@ -38,11 +38,13 @@ export class App {
         text2:
           'Ich setze Anforderungen gerne in saubere und praxisnahe Anwendungen um – mit besonderem Fokus auf Benutzerfreundlichkeit, Wartbarkeit und kontinuierliche Verbesserung.',
         locationLabel: 'Standort',
-        location: 'Köln, Deutschland',
+        location: 'Pulheim (50259), Deutschland',
         focusLabel: 'Schwerpunkt',
-        focus: 'Webentwicklung',
+        focus: 'Softwareentwicklung',
         workingLabel: 'Arbeitsbereiche',
         working: 'Frontend · Backend · APIs',
+        languagesLabel: 'Sprachen',
+        languages: 'Persisch · Muttersprache | Deutsch · C1 | Englisch · B1',
       },
 
       skills: {
@@ -67,17 +69,44 @@ export class App {
           title: 'Software Developer',
           company: 'Behrens-Schuleit · Düsseldorf',
           description:
-            'Entwicklung webbasierter Frontend- und Backend-Lösungen, automatisierter Workflows und digitaler Geschäftsprozesse. Integration von APIs und datenbanknahen Prozessen sowie Testing, Fehleranalyse und Optimierung bestehender Anwendungen.',
+            'Entwicklung webbasierter Frontend- und Backend-Lösungen, automatisierter Workflows und digitaler Geschäftsprozesse. Integration von REST APIs und datenbanknahen Prozessen sowie Testing, Fehleranalyse und Optimierung bestehender Anwendungen.',
         },
 
         apprenticeship: {
           title: 'Software Developer · Ausbildung',
           company: 'Behrens-Schuleit · Düsseldorf',
           description:
-            'Entwicklung und Anpassung von Workflows, Webformularen und Softwareintegrationen im Rahmen meiner Ausbildung zum Fachinformatiker für Anwendungsentwicklung.',
+            'Entwicklung und Anpassung von Workflows und Webformularen, Schnittstellen und Datenbanklösungen sowie Mitarbeit an ECM-, Digitalisierungs- und Automatisierungsprojekten.',
+        },
+
+        digitization: {
+          title: 'IT-Dienstleister · Dokumentendigitalisierung',
+          company: 'Behrens-Schuleit · Düsseldorf',
+          description: 'Tätigkeit im Bereich IT-Dienstleistung und Dokumentendigitalisierung.',
+        },
+
+        technicianSilver: {
+          title: 'IT-Techniker · Hard- und Software',
+          company: 'Silver · Iran',
+          description:
+            'Installation und Wartung von Hard- und Softwaresystemen, Betreuung von IT-Systemen und Betriebssystemen sowie Aufbau, Konfiguration und Fehleranalyse von Netzwerken.',
+        },
+
+        technicianNahib: {
+          title: 'IT-Techniker · Hard- und Software',
+          company: 'Nahib · Iran',
+          description:
+            'Installation und Wartung von Hard- und Softwaresystemen, Betreuung von IT-Systemen und Betriebssystemen sowie Aufbau, Konfiguration und Fehleranalyse von Netzwerken.',
         },
       },
 
+      education: {
+        label: 'Ausbildung',
+        title: 'Fachinformatiker für Anwendungsentwicklung',
+        school: 'IHK / Berufsschule · Düsseldorf',
+        date: '2022 — 2025',
+        description: 'Duale Berufsausbildung mit Schwerpunkt Anwendungsentwicklung.',
+      },
       contact: {
         label: 'Kontakt',
         title: 'Lassen Sie uns gemeinsam etwas Großartiges entwickeln.',
@@ -117,11 +146,13 @@ export class App {
         text2:
           'I enjoy turning requirements into clean and practical applications, with a strong focus on usability, maintainability and continuous improvement.',
         locationLabel: 'Location',
-        location: 'Cologne, Germany',
+        location: 'Pulheim (50259), Germany',
         focusLabel: 'Focus',
-        focus: 'Web Development',
+        focus: 'Software Development',
         workingLabel: 'Working with',
         working: 'Frontend · Backend · APIs',
+        languagesLabel: 'Languages',
+        languages: 'Persian · Native | German · C1 | English · B1',
       },
 
       skills: {
@@ -146,15 +177,43 @@ export class App {
           title: 'Software Developer',
           company: 'Behrens-Schuleit · Düsseldorf',
           description:
-            'Development of web-based frontend and backend solutions, automated workflows and digital business processes. Integration of APIs and database-driven processes as well as testing, debugging and optimization of existing applications.',
+            'Development of web-based frontend and backend solutions, automated workflows and digital business processes. Integration of REST APIs and database-driven processes as well as testing, debugging and optimization of existing applications.',
         },
 
         apprenticeship: {
           title: 'Software Developer · Apprenticeship',
           company: 'Behrens-Schuleit · Düsseldorf',
           description:
-            'Development and customization of workflows, web forms and software integrations as part of my vocational training in application development.',
+            'Development and customization of workflows, web forms, interfaces and database solutions, as well as participation in ECM, digitization and automation projects.',
         },
+
+        digitization: {
+          title: 'IT Services · Document Digitization',
+          company: 'Behrens-Schuleit · Düsseldorf',
+          description: 'Worked in IT services and document digitization.',
+        },
+
+        technicianSilver: {
+          title: 'IT Technician · Hardware & Software',
+          company: 'Silver · Iran',
+          description:
+            'Installation and maintenance of hardware and software systems, support of IT systems and operating systems, as well as network setup, configuration and troubleshooting.',
+        },
+
+        technicianNahib: {
+          title: 'IT Technician · Hardware & Software',
+          company: 'Nahib · Iran',
+          description:
+            'Installation and maintenance of hardware and software systems, support of IT systems and operating systems, as well as network setup, configuration and troubleshooting.',
+        },
+      },
+
+      education: {
+        label: 'Education',
+        title: 'IT Specialist for Application Development',
+        school: 'IHK / Vocational School · Düsseldorf',
+        date: '2022 — 2025',
+        description: 'Dual vocational training with a focus on application development.',
       },
 
       contact: {
