@@ -34,9 +34,10 @@ export class App {
         label: 'Über mich',
         title: 'Entwickler mit Fokus auf praxisnahe Lösungen.',
         text1:
-          'Ich bin ausgebildeter Fachinformatiker für Anwendungsentwicklung mit Erfahrung in der Entwicklung webbasierter Anwendungen, Prozessautomatisierung und Integration von Softwarelösungen.',
+          'Ich entwickle gerne Anwendungen, die gut aussehen, einfach zu bedienen sind und im Alltag wirklich etwas bringen.',
+
         text2:
-          'Ich setze Anforderungen gerne in saubere und praxisnahe Anwendungen um – mit besonderem Fokus auf Benutzerfreundlichkeit, Wartbarkeit und kontinuierliche Verbesserung.',
+          'Besonders spannend finde ich es, Abläufe zu automatisieren und Ideen in funktionierende Anwendungen umzusetzen. Dabei probiere ich gerne neue Dinge aus, lerne neue Technologien kennen und suche nach Lösungen, die eine Anwendung wirklich besser machen. Genau diese Mischung aus Ideen, Lernen und Entwickeln macht mir an meinem Beruf besonders viel Spaß.',
         locationLabel: 'Standort',
         location: 'Pulheim (50259), Deutschland',
         focusLabel: 'Schwerpunkt',
@@ -142,9 +143,10 @@ export class App {
         label: 'About me',
         title: 'Developer with a focus on practical solutions.',
         text1:
-          'I am a trained IT specialist for application development with experience in developing web applications, process automation and integrating software solutions.',
+          'I enjoy building applications that look good, are easy to use, and are genuinely useful.',
+
         text2:
-          'I enjoy turning requirements into clean and practical applications, with a strong focus on usability, maintainability and continuous improvement.',
+          'I especially like automating tasks and turning ideas into working applications. I enjoy trying out new things, learning new technologies, and finding solutions that actually make an application better. That mix of ideas, learning, and building is what I enjoy most about being a developer.',
         locationLabel: 'Location',
         location: 'Pulheim (50259), Germany',
         focusLabel: 'Focus',
