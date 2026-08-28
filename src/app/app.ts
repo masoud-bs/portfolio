@@ -56,9 +56,21 @@ export class App {
       projects: {
         label: 'Projekte',
         title: 'Was ich entwickelt habe.',
-        description:
-          'Eine moderne Anwendung zur Arbeitsplatzbuchung, mit der Arbeitsplätze reserviert, Buchungen verwaltet und verfügbare Arbeitsplätze übersichtlich dargestellt werden können.',
         liveDemo: 'Live Demo',
+
+        deskBooking: {
+          title: 'Arbeitsplatzbuchung',
+          description:
+            'Eine moderne Anwendung zur Arbeitsplatzbuchung, mit der Arbeitsplätze reserviert, Buchungen verwaltet und verfügbare Arbeitsplätze übersichtlich dargestellt werden können.',
+          technologies: 'Angular · TypeScript · REST API · SQL · JobRouter',
+        },
+
+        pmCalendar: {
+          title: 'PM-Kalender',
+          description:
+            'Ein interaktiver Abwesenheitskalender für Mitarbeitende aus dem IT- und ECM-Bereich. Die Anwendung zeigt Urlaub, Krankheit, Elternzeit, Fortbildungen und weitere Abwesenheiten übersichtlich in einer Timeline. Mitarbeitende können gefiltert, Zeiträume ausgewählt und Feiertage automatisch aus einer SQL-Datenbank geladen werden.',
+          technologies: 'Angular · TypeScript · vis-timeline · REST API · PHP · SQL · JobRouter',
+        },
       },
 
       experience: {
@@ -165,9 +177,21 @@ export class App {
       projects: {
         label: 'Projects',
         title: "Things I've built.",
-        description:
-          'A modern workplace booking application for reserving desks, managing bookings and providing a clear overview of workplace availability.',
         liveDemo: 'Live Demo',
+
+        deskBooking: {
+          title: 'Workplace Booking',
+          description:
+            'A modern workplace booking application for reserving desks, managing bookings and providing a clear overview of workplace availability.',
+          technologies: 'Angular · TypeScript · REST API · SQL · JobRouter',
+        },
+
+        pmCalendar: {
+          title: 'PM Calendar',
+          description:
+            'An interactive absence calendar for IT and ECM teams. The application provides a clear timeline of vacation, sickness, parental leave, training and other absences. Employees can be filtered, custom date ranges can be selected, and public holidays are loaded automatically from a SQL database.',
+          technologies: 'Angular · TypeScript · vis-timeline · REST API · PHP · SQL · JobRouter',
+        },
       },
 
       experience: {
