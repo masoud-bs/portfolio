@@ -31,10 +31,14 @@
 
     <h1>Masoud Firouzi</h1>
 
-    <h2>
-      {{ t.hero.title }}
-      <span>{{ t.hero.subtitle }}</span>
+    <h2 class="hero__role">
+      <span class="hero__terminal-prefix">&gt;</span>
+      <span>{{ typedText }}</span>
+      <span class="typing-cursor">|</span>
     </h2>
+    <p class="hero__subtitle">
+      {{ t.hero.subtitle }}
+    </p>
 
     <p class="hero__description">
       {{ t.hero.description }}
@@ -127,6 +131,14 @@
     <div class="section-heading">
       <span>{{ t.projects.label }}</span>
       <h2>{{ t.projects.title }}</h2>
+    </div>
+
+    <!-- Hinwise -->
+    <div class="projects__notice">
+      <h3>{{ t.projects.notice.title }}</h3>
+      <p>
+        {{ t.projects.notice.description }}
+      </p>
     </div>
 
     <!-- PROJECT 01 -->

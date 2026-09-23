@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ChangeDetectorRef } from '@angular/core';
 
 type Language = 'de' | 'en';
 
@@ -9,7 +10,24 @@ type Language = 'de' | 'en';
   styleUrl: './app.scss',
 })
 export class App {
+  constructor(private cdr: ChangeDetectorRef) {}
+
   currentLanguage: Language = 'de';
+  typedText = '';
+
+  private roleIndex = 0;
+  private charIndex = 0;
+  private deleting = false;
+
+  private typingTimer?: ReturnType<typeof setTimeout>;
+
+  ngAfterViewInit(): void {
+    this.startTyping();
+  }
+
+  ngOnDestroy(): void {
+    clearTimeout(this.typingTimer);
+  }
 
   translations = {
     de: {
@@ -23,6 +41,12 @@ export class App {
 
       hero: {
         intro: 'Hallo, ich bin',
+        roles: [
+          'Softwareentwickler',
+          'Full-Stack Entwickler',
+          'Backend Entwickler',
+          'Angular · Node.js · NestJS',
+        ],
         title: 'Softwareentwickler',
         subtitle: 'Fachinformatiker für Anwendungsentwicklung',
         description:
@@ -57,6 +81,12 @@ export class App {
         label: 'Projekte',
         title: 'Was ich entwickelt habe.',
         liveDemo: 'Live Demo',
+
+        notice: {
+          title: 'Hinweis zu meinen Projekten',
+          description:
+            'Neben den hier veröffentlichten Projekten habe ich an weiteren Anwendungen gearbeitet, die aufgrund von Datenschutz und vertraulichen Unternehmensdaten nicht im Original veröffentlicht werden können. Einige der hier gezeigten Projekte wurden deshalb als datenschutzkonforme Demo-Versionen aufbereitet – sensible Daten, interne APIs und unternehmensbezogene Informationen wurden entfernt oder durch Mock-Daten ersetzt. Weitere Projekte befinden sich bereits in Vorbereitung. Meine Android-TV- und Android-Box-App TelegramTV befindet sich aktuell im geschlossenen Google-Play-Test und wird demnächst ebenfalls hier veröffentlicht.',
+        },
 
         deskBooking: {
           title: 'Arbeitsplatzbuchung',
@@ -144,6 +174,12 @@ export class App {
 
       hero: {
         intro: "Hello, I'm",
+        roles: [
+          'Software Developer',
+          'Full-Stack Developer',
+          'Backend Developer',
+          'Angular · Node.js · NestJS',
+        ],
         title: 'Software Developer',
         subtitle: 'IT Specialist for Application Development',
         description:
@@ -178,6 +214,12 @@ export class App {
         label: 'Projects',
         title: "Things I've built.",
         liveDemo: 'Live Demo',
+
+        notice: {
+          title: 'A note about my projects',
+          description:
+            'In addition to the projects published here, I have worked on other applications that cannot be released in their original form due to data protection and confidential company information. Some of the projects shown here have therefore been prepared as privacy-safe demo versions, with sensitive data, internal APIs and company-specific information removed or replaced with mock data. More projects are currently being prepared for publication. My Android TV and Android Box app TelegramTV is currently in closed testing on Google Play and will also be added here soon.',
+        },
 
         deskBooking: {
           title: 'Workplace Booking',
@@ -261,6 +303,71 @@ export class App {
   }
 
   setLanguage(language: Language): void {
+    if (this.currentLanguage === language) return;
+
     this.currentLanguage = language;
+
+    this.roleIndex = 0;
+    this.charIndex = 0;
+    this.deleting = false;
+    this.typedText = '';
+
+    this.startTyping();
+  }
+
+  private startTyping(): void {
+    clearTimeout(this.typingTimer);
+
+    const type = () => {
+      const roles = this.t.hero.roles;
+
+      if (!roles?.length) return;
+
+      if (this.roleIndex >= roles.length) {
+        this.roleIndex = 0;
+      }
+
+      const currentRole = roles[this.roleIndex];
+
+      if (!this.deleting) {
+        this.charIndex++;
+
+        this.typedText = currentRole.slice(0, this.charIndex);
+        this.cdr.detectChanges();
+
+        if (this.charIndex >= currentRole.length) {
+          this.charIndex = currentRole.length;
+          this.deleting = true;
+
+          this.typingTimer = setTimeout(type, 1500);
+          return;
+        }
+
+        this.typingTimer = setTimeout(type, 80);
+        return;
+      }
+
+      this.charIndex--;
+
+      this.typedText = currentRole.slice(0, this.charIndex);
+      this.cdr.detectChanges();
+
+      if (this.charIndex <= 0) {
+        this.charIndex = 0;
+        this.typedText = '';
+        this.deleting = false;
+
+        this.roleIndex = (this.roleIndex + 1) % roles.length;
+
+        this.cdr.detectChanges();
+
+        this.typingTimer = setTimeout(type, 300);
+        return;
+      }
+
+      this.typingTimer = setTimeout(type, 40);
+    };
+
+    type();
   }
 }

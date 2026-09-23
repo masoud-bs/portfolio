@@ -91,23 +91,6 @@ h1 {
   letter-spacing: -3px;
 }
 
-.hero h2 {
-  margin: 20px 0 0;
-
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
-  color: #cbd5e1;
-  font-weight: 500;
-
-  span {
-    display: block;
-
-    margin-top: 8px;
-
-    font-size: 0.65em;
-    color: #64748b;
-  }
-}
-
 .hero__description {
   max-width: 650px;
   margin: 28px 0 0;
@@ -122,6 +105,62 @@ h1 {
   gap: 16px;
 
   margin-top: 36px;
+}
+
+.hero__role {
+  min-height: 55px;
+  margin: 20px 0 0;
+
+  display: flex;
+  align-items: center;
+
+  color: #cbd5e1;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 500;
+
+  text-shadow:
+    0 0 5px rgba(59, 130, 246, 0.45),
+    0 0 12px rgba(59, 130, 246, 0.25);
+}
+
+.hero__terminal-prefix {
+  margin-right: 12px;
+
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+.typing-cursor {
+  margin-left: 3px;
+
+  color: #3b82f6;
+  font-weight: 400;
+
+  text-shadow:
+    0 0 5px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 18px rgba(59, 130, 246, 0.8);
+  animation: cursorBlink 0.8s infinite;
+}
+
+.hero__subtitle {
+  margin: 4px 0 0;
+
+  color: #64748b;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@keyframes cursorBlink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 /* =========================
@@ -332,6 +371,10 @@ h1 {
   }
 }
 
+.project-card + .project-card {
+  margin-top: 32px;
+}
+
 .project-card__content {
   padding: 50px;
 
@@ -357,7 +400,7 @@ h1 {
 .project-card__number {
   color: #3b82f6;
 
-  font-size: 0.85rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -839,5 +882,22 @@ h1 {
 
   .experience-item__tech {
     width: 100%;
+  }
+}
+
+.projects__notice {
+  margin-bottom: 3rem;
+  padding: 1.5rem 1.75rem;
+  border-left: 3px solid currentColor;
+
+  h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.7;
+    opacity: 0.8;
   }
 }
