@@ -85,7 +85,7 @@ export class App {
         notice: {
           title: 'Hinweis zu meinen Projekten',
           description:
-            'Neben den hier veröffentlichten Projekten habe ich an weiteren Anwendungen gearbeitet, die aufgrund von Datenschutz und vertraulichen Unternehmensdaten nicht im Original veröffentlicht werden können. Einige der hier gezeigten Projekte wurden deshalb als datenschutzkonforme Demo-Versionen aufbereitet – sensible Daten, interne APIs und unternehmensbezogene Informationen wurden entfernt oder durch Mock-Daten ersetzt. Weitere Projekte befinden sich bereits in Vorbereitung. Meine Android-TV- und Android-Box-App TelegramTV befindet sich aktuell im geschlossenen Google-Play-Test und wird demnächst ebenfalls hier veröffentlicht.',
+            'Neben den hier veröffentlichten Projekten habe ich an weiteren Anwendungen gearbeitet, die aufgrund von Datenschutz und vertraulichen Unternehmensdaten nicht im Original veröffentlicht werden können. Einige der hier gezeigten Projekte wurden deshalb als datenschutzkonforme Demo-Versionen aufbereitet – sensible Daten, interne APIs und unternehmensbezogene Informationen wurden entfernt oder durch Mock-Daten ersetzt. Weitere Projekte befinden sich bereits in Vorbereitung. Meine Android-TV-App TGramTV befindet sich aktuell im geschlossenen Test bei Google Play. Eine Version des Projekts ist bereits hier verfügbar. Nach Abschluss der Testphase und der Veröffentlichung wird die App zusätzlich direkt mit Google Play verlinkt.',
         },
 
         deskBooking: {
@@ -100,6 +100,13 @@ export class App {
           description:
             'Ein interaktiver Abwesenheitskalender für Mitarbeitende aus dem IT- und ECM-Bereich. Die Anwendung zeigt Urlaub, Krankheit, Elternzeit, Fortbildungen und weitere Abwesenheiten übersichtlich in einer Timeline. Mitarbeitende können gefiltert, Zeiträume ausgewählt und Feiertage automatisch aus einer SQL-Datenbank geladen werden.',
           technologies: 'Angular · TypeScript · vis-timeline · REST API · PHP · SQL · JobRouter',
+        },
+
+        telegramTV: {
+          title: 'TGramTV',
+          description:
+            'Eine Android-TV-App zur Nutzung von Telegram auf dem Fernseher. Die App ermöglicht den Zugriff auf private Chats, Gruppen und Kanäle sowie die übersichtliche Anzeige von Videos, Bildern, Musik und Dateien. Die Benutzeroberfläche wurde speziell für die Bedienung mit einer TV-Fernbedienung entwickelt.',
+          technologies: 'Kotlin · Android TV · Leanback · Telegram API · Gradle',
         },
       },
 
@@ -218,7 +225,7 @@ export class App {
         notice: {
           title: 'A note about my projects',
           description:
-            'In addition to the projects published here, I have worked on other applications that cannot be released in their original form due to data protection and confidential company information. Some of the projects shown here have therefore been prepared as privacy-safe demo versions, with sensitive data, internal APIs and company-specific information removed or replaced with mock data. More projects are currently being prepared for publication. My Android TV and Android Box app TelegramTV is currently in closed testing on Google Play and will also be added here soon.',
+            'In addition to the projects published here, I have worked on other applications that cannot be released in their original form due to data protection and confidential company information. Some of the projects shown here have therefore been prepared as privacy-safe demo versions, with sensitive data, internal APIs and company-specific information removed or replaced with mock data. More projects are currently being prepared for publication. My Android TV app TGramTV is currently in closed testing on Google Play. A version of the project is already available here. Once testing is complete and the app is published, it will also be linked directly to Google Play.',
         },
 
         deskBooking: {
@@ -233,6 +240,13 @@ export class App {
           description:
             'An interactive absence calendar for IT and ECM teams. The application provides a clear timeline of vacation, sickness, parental leave, training and other absences. Employees can be filtered, custom date ranges can be selected, and public holidays are loaded automatically from a SQL database.',
           technologies: 'Angular · TypeScript · vis-timeline · REST API · PHP · SQL · JobRouter',
+        },
+
+        telegramTV: {
+          title: 'TGramTV',
+          description:
+            'An Android TV app for using Telegram on the big screen. The app provides access to private chats, groups and channels and allows users to browse videos, photos, music and files. The interface is specifically designed for navigation with a TV remote control.',
+          technologies: 'Kotlin · Android TV · Leanback · Telegram API · Gradle',
         },
       },
 
