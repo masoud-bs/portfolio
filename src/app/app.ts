@@ -108,6 +108,12 @@ export class App {
             'Eine Android-TV-App zur Nutzung von Telegram auf dem Fernseher. Die App ermöglicht den Zugriff auf private Chats, Gruppen und Kanäle sowie die übersichtliche Anzeige von Videos, Bildern, Musik und Dateien. Die Benutzeroberfläche wurde speziell für die Bedienung mit einer TV-Fernbedienung entwickelt.',
           technologies: 'Kotlin · Android TV · Leanback · Telegram API · Gradle',
         },
+
+        nestjsAuth: {
+          title: 'NestJS Authentication API',
+          description:
+            'Wiederverwendbare Backend-Lösung für sichere Benutzerauthentifizierung mit NestJS, Prisma und JWT. Implementiert wurden Benutzerregistrierung, E-Mail-Verifizierung, Access- und Refresh-Tokens mit Token-Rotation, Passwort-Wiederherstellung sowie Rate Limiting zum Schutz der API.',
+        },
       },
 
       experience: {
@@ -247,6 +253,12 @@ export class App {
           description:
             'An Android TV app for using Telegram on the big screen. The app provides access to private chats, groups and channels and allows users to browse videos, photos, music and files. The interface is specifically designed for navigation with a TV remote control.',
           technologies: 'Kotlin · Android TV · Leanback · Telegram API · Gradle',
+        },
+
+        nestjsAuth: {
+          title: 'NestJS Authentication API',
+          description:
+            'Reusable backend solution for secure user authentication using NestJS, Prisma, and JWT. Features user registration, email verification, access and refresh tokens with token rotation, password recovery, and API rate limiting.',
         },
       },
 
